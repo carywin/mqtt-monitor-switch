@@ -1,0 +1,8 @@
+[Unit]
+Description=MQTT Monitor Switch
+After=multi-user.target
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /home/pi/mon-mqtt/mon-mqtt.py
+[Install]
+WantedBy=multi-user.target
